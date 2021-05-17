@@ -1,2 +1,2 @@
-# Kimberlyn-Jordan
+# KimberlynCJordan
 MIT Coding Bootcamp
