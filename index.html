@@ -14,14 +14,24 @@
     <link rel="stylesheet" href="index_layout.css">
   </head>
 
-
+  <style type="text/css">
+      .space {
+        margin-top:  170px;
+      }
+      footer {
+        padding-top:  40px;
+        padding-bottom: 40px;
+        margin-top:  60px;
+      }
+  </style>
 
 
   <body>
     
    <!--NAVIGATION BAR-->
    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">KJ</a>
+    <div class="container">
+        <a class="navbar-brand" href="#">KJ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,16 +43,17 @@
         <a class="nav-item nav-link" href="#contact">Contact</a>
       </div>
     </div>
+    </div>
   </nav>
 
-<div class="container">
-<br><br><br><br><br>      
+<div class="container space">
+      
 <!-- LANDING PAGE -->
 <div class="landing" id="home">
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mt-3">
                 <div class="landing-content">
 
                     <h1>Kimberlyn C. Jordan<br> would be a dynamic asset to your team!</h1> 
@@ -50,10 +61,10 @@
                     <a href="#projects" class="btn btn-primary">See my projects</a><a href="about.html#story" class="btn btn-default">Get to know me</a>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-3">
                 
                 <div class="landing-photo">
-                    <img src="kimpic.jpeg" class="img-thumbnail" style="float: right;" /> 
+                    <img src="http://www.kimberlyncodes.com/kimpic.jpeg" class="img-fluid" style="max-height: 700px;" width="90%" /> 
                 </div>
             </div>
         </div>
@@ -64,8 +75,8 @@
 
 
 <!--YOUTUBE-->
-<div class="bio" id="about">
-
+<div class="bio text-center" id="about">
+<br><br><br>
 <div class="bio-youtube">
     <h2>About Me.</h2>
 
@@ -73,7 +84,7 @@
 <iframe width="560" height="315" src="PUT LINK FOR VIDEO HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </div>
-
+<br><br><br>
 <!-- BIO -->
     <div class="bio-about"> 
 
@@ -87,6 +98,7 @@
       
      </div>
 </div>
+<br><br><br>
 
 <!--PROJECTS-->
 <div class="projects" id="projects">
@@ -108,6 +120,7 @@
             
             <hr>
 </div>
+    <br><br><br>
 
 <div class="col-md-4">
     <div>
@@ -136,41 +149,35 @@
 
 
  <!-- CONTACT CARD -->
- <div class="contact" id="contact" style="margin-bottom: 10%;">
+    <div style="width:80%!important; margin-left: auto; margin-right: auto;">
+        <div class="card" id="contact" style="margin-top: 60px; margin-bottom: 60px;">
+        <h2 class="card-header text-center">Contact</h2>
+        <div class="card-body text-center">
+            <div class="card-content">
+                <p>Goal: Full-time<br>Entry Level Web Development Position<br>Location:  Houston, Texas</p>
+            </div>
+        </div>
+        <p class="card-footer text-center">
+            You can reach me at: <a href="mailto:kimberlyn@kimberlyncodes.com" class="text-info">kimberlyn@kimberlyncodes.com</a>
+        </p>
+        </div>
+    </div>
+<!-- contact card end -->
 
-    <div class="card-container">
-    
-        <div class="card-content" style="width:300px;margin-top: 40px;padding:20px">
-
-<h2>Contact</h2>
-<br>
-<p>Goal: Full-time<br>Entry Level Web Development Position<br>Location:  Houston, Texas<br>You can reach me at: <br>kimberlyn@kimberlyncodes.com</p>
-<br>
- </div>
 </div>
-</div>
-  </div>
 
 
 <!-- FOOTER -->
-             <div class="footer" style="padding-top: 0px">
-              <hr>
-          </div>
-          <div class="footer" style="padding-left: 66%">
-              <dl>
-                  <dt class="footerli"><a class="footerlink" href="#home">Home</a></dt>
-                  <dt class="footerli"><a class="footerlink" href="about.html">About Me</a></dt>
-                  <dt class="footerli"><a class="footerlink" href="#projects">Projects</a></dt>
-                  <dt class="footerli"><a class="footerlink" href="contact.html">Contact</a></dt>
-              </dl>
-          </div>           
-          <div class="footer" style="padding-left: 70%">
-              <ul>
-                 <p id="footer-text" style="text-align: right;font-size:1rem"></p> 
-              </ul>
-          </div>
 
-      </div>
+<footer class="bg-light text-dark">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p>&copy; 2021 kimberlyncodes.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <!--Javascript Stuff?-->
    <script>
